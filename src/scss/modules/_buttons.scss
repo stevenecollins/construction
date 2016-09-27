@@ -1,0 +1,15 @@
+.button {
+  padding: 8px 15px;
+  font-size: 120%;
+  background: $blue;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  &:hover{
+    background: darken($blue, 10%)
+  }
+}
+.button.active {
+  background: darken($blue, 10%)
+}

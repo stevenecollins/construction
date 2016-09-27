@@ -391,8 +391,80 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+.header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 15px solid #efefef;
+  height: 70px; }
+  .header .nav {
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+            align-self: center;
+    margin-left: 10px; }
+  .header ul {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .header ul li {
+      margin-right: 2px;
+      border-radius: 3px; }
+  .header .last-modified {
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    font-size: 75%;
+    color: #a2a2a2;
+    margin-right: 10px;
+    padding-bottom: 10px; }
+
+.container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 1080px;
+  margin: 15px; }
+  .container .main {
+    -webkit-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    background: #fff;
+    margin-right: 15px; }
+  .container .sidebar {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    min-width: 300px; }
+
 .nav ul {
   list-style: none; }
+
+.sidebar {
+  background: #fff; }
+
+.button, .header ul li {
+  padding: 8px 15px;
+  font-size: 120%;
+  background: #3983c5;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer; }
+  .button:hover, .header ul li:hover {
+    background: #2e699d; }
+
+.button.active, .header ul li.active {
+  background: #2e699d; }
 
 @font-face {
   font-family: 'Font-Name';
@@ -440,7 +512,7 @@ li {
 .table .itemGrp {
   color: #777879 !important;
   opacity: 0.80;
-  margin-top: 3px; }
+  border-top: solid 2px #efefef; }
   .table .itemGrp:hover {
     color: #5e5e5e !important;
     cursor: pointer;
@@ -451,13 +523,12 @@ li {
   opacity: 1; }
 
 .table .th {
-  background-color: #ddd;
-  margin: 5px 0 0;
+  background-color: #e9e9e9;
   width: 100%;
   border: none;
   box-shadow: none; }
   .table .th .td {
-    font-size: 0.7rem;
+    font-size: 100%;
     color: #8e8e8e;
     font-weight: normal;
     -webkit-align-self: center;

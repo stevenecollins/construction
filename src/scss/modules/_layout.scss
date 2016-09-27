@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  border-bottom: 15px solid #efefef;
+  height: 70px;
+  .nav {
+    flex-grow: 1;
+    align-self: center;
+    margin-left: 10px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    li {
+      @extend .button;
+      margin-right: 2px;
+      border-radius: 3px;
+
+    }
+  }
+  .last-modified {
+    align-items: flex-end;
+    align-self: flex-end;
+    font-size: 75%;
+    color: $grey-40;
+    margin-right: 10px;
+    padding-bottom: 10px;
+  }
+}
+.container {
+  display: flex;
+  min-width: 1080px;
+  margin: 15px;
+  .main {
+    flex: 3;
+    background: #fff;
+    margin-right: 15px;
+  }
+  .sidebar {
+    flex: 1;
+    min-width: 300px;
+  }
+}
