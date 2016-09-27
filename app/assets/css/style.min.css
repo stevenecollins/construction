@@ -1,9 +1,9 @@
 /*!
- * fastshell
- * Fiercely quick and opinionated front-ends
- * https://HosseinKarami.github.io/fastshell
- * @author Hossein Karami
- * @version 1.0.5
+ * Construction
+ * Construction 1.0
+ * 
+ * @author Steven E Collins
+ * @version 1.0
  * Copyright 2016. MIT licensed.
  */
 .clear:after,.clear:before{content:' ';display:table}.clear{*zoom:1}.clear:after{clear:both}*{box-sizing:border-box;font-smoothing:antialiased;text-rendering:optimizeLegibility}html{font-size:100%;background:#efefef}body{font:300 13px/1.6 Helvetica Neue,Helvetica,Arial;color:#444;transition:all .4s ease-in .3s}body,html{min-height:100vh;overflow:hidden}
