@@ -1,3 +1,33 @@
-$base : #F7F6F0;
-$darken : darken(#F7F6F0 , 30%);
-$back: darken(#F7F6F0, 40%);
+// COLORS
+// =============================================================================
+$white               : #fff;
+$red                 : #a51e31; // Main nav highlight red
+$red-dark            : #751121; // Darker bar on hover of nav
+$green               : #75c83c; // main green used to highlight accounts, also used as title / finance text
+$green-dark          : #66af34; // dark green used for ribbon
+$green-light         : #90cd6d;
+$blue                : #3983c5; // used for most buttons and highlights on site
+$blue-dark           : #2a6b96; // Darker blue for two tone buttons and active states
+$blue-light          : #92c1de; // Incase for some reason we can't to opacity .5 on toggles
+$blue-mid            : #519dca; // In view by: 15 - 50 - 100 account
+$orange              : #e74c3d; // Used for Warnings and errors
+$orange-light        : #fffbf0; // information tooltip background color;
+$white-foreground    : #fff; // nav and all content areas
+$black               : #363a3a;
+$grey-100            : #474747; // Used for section headers
+$grey-80             : #5e5e5e; // Placeholder text inside form feilds
+$grey-70             : #666; // Used for section headers
+$grey-60             : #777879;
+$grey-50             : #8e8e8e; // selectable menu items like accounts list and faded small text like pending
+$grey-40             : #a2a2a2;
+$gray-30: #7A7A7A;
+$grey-20             : #ddd;
+$grey-10             : #ebebeb; // main bg of whole site
+$grey-7				 : #eaeaea; // lighter than grey-10...but darker than grey-5
+$grey-5              : #fafafa; //form field BGs
+
+$debit               : #ED5565;
+$debit-dark          : #d32d2d; // for the icon BG on error button
+
+// $credit: #66b034; at some point this changed from the one below. not sure why
+$credit              : #75c83c;

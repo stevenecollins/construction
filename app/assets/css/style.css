@@ -13,8 +13,8 @@
   text-rendering: optimizeLegibility; }
 
 html {
-  font-size: 62.5%;
-  background: radial-gradient(ellipse at center, #F7F6F0 0, #c2ba8c 80%, #b0a66b 100%); }
+  font-size: 100%;
+  background: #efefef; }
 
 body {
   font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
@@ -391,12 +391,6 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-.logo {
-  margin: -58px 0 0 -100px;
-  position: absolute;
-  top: 50%;
-  left: 50%; }
-
 .nav ul {
   list-style: none; }
 
@@ -406,6 +400,70 @@ textarea {
   src: url("../fonts/font-name.eot?#iefix") format("embedded-opentype"), url("../fonts/font-name.woff") format("woff"), url("../fonts/font-name.ttf") format("truetype"), url("../fonts/font-name.svg#font-name") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+li,
+ul {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+.table .th,
+.table .tr {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .table .th .td,
+  .table .tr .td {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 10px;
+    font-size: 0.875rem; }
+  .table .th .debit,
+  .table .tr .debit {
+    color: #ED5565; }
+  .table .th .debit::before,
+  .table .tr .debit::before {
+    content: "("; }
+  .table .th .debit::after,
+  .table .tr .debit::after {
+    content: ")"; }
+  .table .th .credit,
+  .table .tr .credit {
+    color: #75c83c; }
+
+.table .itemGrp {
+  color: #777879 !important;
+  opacity: 0.80;
+  margin-top: 3px; }
+  .table .itemGrp:hover {
+    color: #5e5e5e !important;
+    cursor: pointer;
+    opacity: 1; }
+
+.table .itemGrp.open {
+  border-left: 5px solid #3983c5;
+  opacity: 1; }
+
+.table .th {
+  background-color: #ddd;
+  margin: 5px 0 0;
+  width: 100%;
+  border: none;
+  box-shadow: none; }
+  .table .th .td {
+    font-size: 0.7rem;
+    color: #8e8e8e;
+    font-weight: normal;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+            align-self: center; }
 
 ::-moz-selection {
   background: #333;

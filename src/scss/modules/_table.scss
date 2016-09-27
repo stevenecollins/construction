@@ -1,0 +1,62 @@
+li,
+ul {
+  padding: 0;
+  margin : 0;
+}
+li {
+  list-style: none;
+}
+
+// Default Global table Styles
+.table {
+  .th,
+  .tr {
+    display       : flex;
+    flex-direction: row;
+    .td {
+      flex     : 1;
+      padding  : 10px;
+      font-size: 0.875rem;
+    }
+    .debit {
+      color: $debit;
+    }
+    .debit::before {
+      content: "(";
+    }
+    .debit::after {
+      content: ")";
+    }
+    .credit {
+      color: $credit;
+    }
+  }
+  // Hover animation
+  .itemGrp {
+    color     : $grey-60 !important;
+    opacity   : 0.80;
+    margin-top: 3px;
+    &:hover {
+      color  : $grey-80 !important;
+      cursor : pointer;
+      opacity: 1;
+    }
+  }
+  .itemGrp.open {
+    border-left: 5px solid $blue;
+    opacity    : 1;
+  }
+  .th {
+    background-color: #ddd;
+    margin          : 5px 0 0;
+    width           : 100%;
+    border          : none;
+    box-shadow      : none;
+    .td {
+      font-size  : 0.7rem;
+      color      : $grey-50;
+      font-weight: normal;
+      align-self : center;
+    }
+  }
+}// END Default Global table Styles
