@@ -459,7 +459,8 @@ textarea {
   .sidebar .newActivityContent {
     -webkit-flex: 1;
         -ms-flex: 1;
-            flex: 1; }
+            flex: 1;
+    padding: 5px; }
   .sidebar .newActivityFooter {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -501,6 +502,13 @@ textarea {
   .disabled:hover {
     background: #3983c5;
     opacity: .75; }
+
+input, textarea, select, button {
+  width: 120px;
+  margin: 0;
+  /* For legacy WebKit based browsers */
+  /* For legacy (Firefox <29) Gecko based browsers */
+  box-sizing: border-box; }
 
 @font-face {
   font-family: 'Font-Name';
