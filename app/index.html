@@ -171,6 +171,62 @@
       </main>
       <aside class="sidebar">
         <div class="button">Add New Activity</div>
+        <div class="newActivityContent">
+          <select>
+            <option value="Activity Type">Activity Type</option>
+            <option value="Draw">Draw</option>
+            <option value="Transfer">Transfer</option>
+            <option value="Disbursement">Disbursement</option>
+          </select>
+          <input type="text" name="Payee:" placeholder="Payee">
+          <select>
+            <option value="Vendor Status">Vendor Status:</option>
+            <option value="Approved">Approved</option>
+            <option value="Waiting">Waiting</option>
+          </select>
+          <input type="number" name="Amount:" placeholder="$0.00">
+          <input type="type" name="Invoice/Ref#" placeholder="Invoice/Ref#">
+          <select>
+            <option value="Draw Type">Draw Type:</option>
+            <option value="Draw - Invoice">Draw - Invoice</option>
+            <option value="Working Capital">Working Capital</option>
+            <option value="Misc. Invoice">Misc. Invoice</option>
+            <option value="Grading Invoice">Grading Invoice</option>
+            <option value="Equipment Invoice">Equipment Invoice</option>
+            <option value="Houses Invoice">Houses Invoice</option>
+          </select>
+          <div>Document Completion: <span>55%</span></div>
+          <div class="tableWrap">
+            <div class="table">
+              <ul class="th">
+                <li class="td "></li>
+                <li class="td ">Document or Checklist Item</i></li>
+                <li class="td ">Status</li>
+                <li class="td ">Bank Comments</li>
+              </ul>
+              <ul class="tr">
+                <li class="td "></li>
+                <li class="td ">Inspection</li>
+                <li class="td "><select><option value="Approved">Approved</option></select></li>
+                <li class="td "><input type="text"/></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="newTransaction">
+          <div class="button">Add Transaction</div>
+          <div class="totalActivity">Total: <span class="debit">45,000</span></div>
+        </div>
+        <div class="newActivityComment">
+          Comments:
+          <textarea></textarea>
+        </div>
+        <div class="newActivityFooter">
+          <div class="button cancel">Cancel</div>
+          <div class="button save">Save for Later</div>
+          <div class="button submit disabled">Submit</div>
+        </div>
       </aside>
     </div> <!-- END Container -->
 

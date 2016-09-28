@@ -1,3 +1,20 @@
 .sidebar {
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  .newActivityContent {
+    flex: 1;
+  }
+  .newActivityFooter {
+    display: flex;
+    flex-direction: row;
+
+    .button {
+      flex-grow: 1;
+      margin-right: 2px;
+    }
+    .button:last-child {
+      margin-right: 0px;
+    }
+  }
 }

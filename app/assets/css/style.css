@@ -414,8 +414,7 @@ textarea {
         -ms-flex-direction: row;
             flex-direction: row; }
     .header ul li {
-      margin-right: 2px;
-      border-radius: 3px; }
+      margin-right: 2px; }
   .header .last-modified {
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
@@ -450,7 +449,31 @@ textarea {
   list-style: none; }
 
 .sidebar {
-  background: #fff; }
+  background: #fff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .sidebar .newActivityContent {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .sidebar .newActivityFooter {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .sidebar .newActivityFooter .button, .sidebar .newActivityFooter .header ul li, .header ul .sidebar .newActivityFooter li {
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      margin-right: 2px; }
+    .sidebar .newActivityFooter .button:last-child, .sidebar .newActivityFooter .header ul li:last-child, .header ul .sidebar .newActivityFooter li:last-child {
+      margin-right: 0px; }
 
 .button, .header ul li {
   padding: 8px 15px;
@@ -465,6 +488,19 @@ textarea {
 
 .button.active, .header ul li.active {
   background: #2e699d; }
+
+.cancel {
+  background: #ebebeb;
+  color: #999; }
+  .cancel:hover {
+    background: #d2d2d2; }
+
+.disabled {
+  opacity: .75;
+  cursor: default; }
+  .disabled:hover {
+    background: #3983c5;
+    opacity: .75; }
 
 @font-face {
   font-family: 'Font-Name';
